@@ -9,6 +9,7 @@
                 $car_imagen=array("imagen"=>($_FILES['imagen']['name']));
                 $imagen=strtolower(end($car_imagen));
                 $ruta ="imagenes/".$imagen;
+                var_dump($ruta);
                 move_uploaded_file($fichero["tmp_name"],$ruta);
 
                 $datos=array("id_users"=>$_POST["id_users"],"id_prod"=>$_POST["id_prod"],

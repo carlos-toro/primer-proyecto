@@ -8,14 +8,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form/style.css">
 </head>
 <body>
     <header>
-        <a href="index.php?paginas=iniciar sesion">iniciar sesion</a>
-        <a href="index.php?paginas=registrarCompras">registrar compras</a>
-        <a href="index.php?paginas=registrarProductos">registrar productos</a>
-        <a href="index.php?paginas=CRUD">CRUD</a>
+    <h1 class="centered-absolute">E-COMMERS</h1>
+        <ul class="nav nav-pills justify-content-center">
+            <li><a class="dropdown-item" href="index.php?paginas=iniciar sesion">iniciar sesion</a></li>
+            <li><a class="dropdown-item" href="index.php?paginas=registrarCompras">registrar compras</a></li>
+            <li><a class="dropdown-item" href="index.php?paginas=registrarProductos">registrar productos</a></li>
+            <li><a class="dropdown-item" href="index.php?paginas=CRUD">CRUD</a></li>
+        
+        </ul>
     </header>
+
+  
     <section>
         <?php
             $paginas=new controlador();

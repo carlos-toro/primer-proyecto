@@ -10,7 +10,7 @@
     <input type="file" name="imagen" id="">
     <input type="submit" value="registrar">
     <?php
-        $registrar = tablas::registrar();
+        $registrar = tablas::registrar_compra();
         if($registrar=="si"){
             echo '<script> 
                 window.location="index.php?paginas=CRUD";
